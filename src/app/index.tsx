@@ -1,23 +1,14 @@
 import React from 'react';
-// import './App.css';
-import {
-  Box, Paper, Typography,
-} from '@mui/material';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { HomePage } from './pages/HomePage';
 
 function App() {
   return (
-    <Box sx={{
-      display: 'flex',
-      justifyContent: 'center',
-      flexDirection: 'column',
-      height: '100px',
-      backgroundColor: 'red',
-    }}
-    >
-      <Paper elevation={3}>
-        <Typography>Hello World</Typography>
-      </Paper>
-    </Box>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

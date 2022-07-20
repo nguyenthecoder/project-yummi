@@ -1,20 +1,16 @@
 import React from 'react';
 import {
-  AppBar, Box, IconButton,
+  AppBar, Box,
   Toolbar, Typography,
 } from '@mui/material';
 
-import MenuIcon from '@mui/icons-material/Menu';
+// import MenuIcon from '@mui/icons-material/Menu';
 
 function NavBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton size="large" edge="start" color="inherit" sx={{ mr: 2 }}>
-            <MenuIcon />
-          </IconButton>
-
           <Typography
             sx={{
               flexGrow: 1,

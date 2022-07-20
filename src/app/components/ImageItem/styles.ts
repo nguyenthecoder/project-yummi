@@ -1,16 +1,24 @@
 const styles = {
   container: {
     width: 350,
-    height: 300,
+    borderRadius: 3,
+    boxShadow: 3,
   },
   image: {
     objectFit: 'cover',
-    width: '100%',
-    height: '80%',
-    borderRadius: 5,
+    width: 350,
+    height: 200,
+    borderTopRightRadius: 10,
+    borderTopLeftRadius: 10,
   },
-  title: {
-    backgroundColor: 'red',
+  aboutGroup: {
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+    padding: 1,
+  },
+  name: {
+    fontWeight: 'bold',
+    fontSize: 18,
   },
 };
 

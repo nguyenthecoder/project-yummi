@@ -6,9 +6,16 @@ import {
 } from '@mui/material';
 import { ImageItem } from 'app/components/ImageItem';
 
+import { useNavigate } from 'react-router-dom';
 import { styles } from './styles';
 
 function MainList() {
+  const navigate = useNavigate();
+
+  const goToVendor = () => {
+    navigate('/vendor');
+  };
+
   return (
     <Box>
       <Box sx={styles.sectionContainer}>
@@ -19,9 +26,9 @@ function MainList() {
       </Box>
       <Box sx={styles.listContainer}>
         <Stack spacing={2}>
-          <ImageItem />
-          <ImageItem />
-          <ImageItem />
+          <ImageItem goToVendor={goToVendor} />
+          <ImageItem goToVendor={goToVendor} />
+          <ImageItem goToVendor={goToVendor} />
         </Stack>
       </Box>
 

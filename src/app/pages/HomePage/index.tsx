@@ -1,36 +1,21 @@
 import React from 'react';
 import {
   Box,
-  Stack,
-  Typography,
 } from '@mui/material';
 
 import { NavBar } from 'app/components/NavBar';
-import { CurrentLocation } from 'app/components/CurrentLocation';
-import { SearchBox } from 'app/components/SearchBox';
-import { FilterChips } from 'app/components/FilterChips';
-import { ImageItem } from 'app/components/ImageItem';
-
-import { styles } from './styles';
+import { Header } from './components/Header';
+import { MainList } from './components/MainList';
+import { Footer } from './components/Footer';
 
 function HomePage() {
   return (
-    <Box>
+    <Box sx={{ display: 'flex', flexDirection: 'column' }}>
       <NavBar />
-      <CurrentLocation />
-      <SearchBox />
-      <FilterChips />
-
-      <Typography sx={{ fontWeight: 'bold' }}>
-        Near Me
-      </Typography>
-      <Box sx={styles.listContainer}>
-        <Stack spacing={2}>
-          <ImageItem />
-          <ImageItem />
-          <ImageItem />
-        </Stack>
-      </Box>
+      <Header />
+      <MainList />
+      <Footer />
+      <Box />
     </Box>
   );
 }

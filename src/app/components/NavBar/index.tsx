@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  AppBar, Box,
+  AppBar,
   Toolbar, Typography,
 } from '@mui/material';
 
@@ -8,23 +8,21 @@ import {
 
 function NavBar() {
   return (
-    <Box>
-      <AppBar position="static">
-        <Toolbar>
-          <Typography
-            sx={{
-              flexGrow: 1,
-              display: 'flex',
-              justifyContent: 'center',
-              size: 2,
-            }}
-          >
-            Yummi Logo
+    <AppBar position="sticky">
+      <Toolbar>
+        <Typography
+          sx={{
+            flexGrow: 1,
+            display: 'flex',
+            justifyContent: 'center',
+            size: 2,
+          }}
+        >
+          Yummi Logo
 
-          </Typography>
-        </Toolbar>
-      </AppBar>
-    </Box>
+        </Typography>
+      </Toolbar>
+    </AppBar>
   );
 }
 

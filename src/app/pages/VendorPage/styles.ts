@@ -23,9 +23,21 @@ const styles = {
     padding: 1,
     borderRadius: 3,
     boxShadow: 3,
+    display: 'flex',
+    justifyContent: 'center',
   },
-  section: {
-
+  toTopButton: {
+    position: 'fixed',
+    backgroundColor: 'orange',
+    bottom: 20,
+    right: 20,
+    padding: 1,
+    borderRadius: 3,
+    boxShadow: 3,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: 10,
   },
 
 };

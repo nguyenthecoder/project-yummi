@@ -26,9 +26,9 @@ function MainList() {
       </Box>
       <Box sx={styles.listContainer}>
         <Stack spacing={2}>
-          <ImageItem goToVendor={goToVendor} />
-          <ImageItem goToVendor={goToVendor} />
-          <ImageItem goToVendor={goToVendor} />
+          <ImageItem onClick={goToVendor} />
+          <ImageItem onClick={goToVendor} />
+          <ImageItem onClick={goToVendor} />
         </Stack>
       </Box>
 
